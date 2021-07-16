@@ -1,3 +1,5 @@
+#N과 M(3)
+
 N, M = list(map(int,input().split()))
 s = []
 def dfs():

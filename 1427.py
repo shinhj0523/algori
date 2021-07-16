@@ -1,7 +1,5 @@
-N = input()
-N = [int(n)  for n in N]
+#소트 인사이드
 
-M = sorted(N, reverse=True)
-
-for n in M : 
-    print(f'{n}', end="")
+x = list(input())
+sorted_x = list(reversed(sorted(x)))
+print("".join(sorted_x))

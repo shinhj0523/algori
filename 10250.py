@@ -1,19 +1,4 @@
-# T = int(input())
-
-
-# for i in range(1, T+1):
-#     H, W, N = map(int, input().split() )
-#     for rnum in range(1, W):
-#         if (N  > H):
-#             N = N - H
-#         else:
-#             break
-#     if( rnum//10 != 1):
-#         print(f'{N}0{rnum}') 
-#     else:
-#         print(f'{N}{rnum}') 
-        
-
+#ACM호텔
 t = int(input())
 
 for i in range(t):

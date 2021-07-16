@@ -1,3 +1,4 @@
+#동전 0
 n, k = map(int, input().split() )
 N = []
 for i in range(0, n):
@@ -5,7 +6,7 @@ for i in range(0, n):
 N.reverse()
 sum = 0
 for i in N:
-    # print(i)
+
     sum = sum + k // i  # 420 / 100 
     if n == 0:
         break

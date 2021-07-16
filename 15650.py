@@ -1,3 +1,4 @@
+#N과 M(2)
 N, M = list(map(int,input().split()))
 s = []
 def dfs(start):

@@ -1,3 +1,4 @@
+#그룹단어체커
 N = int(input() )
 result = N
 for i in range(0, N):

@@ -1,37 +1,29 @@
 #프린터 큐
+test_case = int(input())
 
-result = 0
+for _ in range(test_case):
+    n, m = list(map(int, input().split() ))
+    imp = list(map(int, input().split() ))
+    idx = list(range(len(imp)))
 
-t = int(input())
-Queue = []
-for i in range(t):
-    
-    # N : 문서의 개수
-    # M : 몇 번째로 인쇄되었는지 궁금한 문서가 몇번째에 놓여 있는지
-    N, M = map(int, input().split() ) 
-    
-    #리스트에 우선순위 추가 하기
-    for _ in range(N):
-        Queue.append(int(input()))
+    idx[m] = 'target'
+    print(idx[m])
+    #순서
+    order = 0
 
-
-        
-    point = M
     while True:
-        #리스트 중에 우선순위 제일 높은 인덱스
-        P = max(Queue)
+        #첫 번째 if: imp의 첫 번째 값 = 최댓값?
+        if imp[0] == max(imp):
+            order += 1
 
-        if( P > Queue[0] ):
-            Queue.append(Queue.pop(0))
-            if point == 0 :
-                point = len(Queue) - 1
-            else :
-                point -= 1
-        else:
-            if point == 0:
+            #두번째 if: idx의 첫 번째 값 = "target"?
+            if idx[0] == 'target':
+                print(order)
                 break
             else:
-                result+=1
-            Queue.pop(0)
-    print(result)
-# print(result)
+                imp.pop(0)
+                idx.pop(0)
+
+        else:
+            imp.append(imp.pop(0))
+            idx.append(idx.pop(0))

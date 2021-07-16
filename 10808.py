@@ -13,6 +13,7 @@
 
 # print(sum)   
 
+#아스키 코드
 S = input()
 Alpha = [0]*26
 for i in S:

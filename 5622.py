@@ -20,6 +20,7 @@
 
 # print(sum)
 
+#다이얼
 
 words = input()
 s = ['ABC','DEF','GHI','JKL','MNO','PQRS','TUV','WXYZ']

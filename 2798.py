@@ -1,3 +1,4 @@
+#블랙잭
 N, M = map(int, input().split())
 arr = list(map(int, input().split()))
 result = 0

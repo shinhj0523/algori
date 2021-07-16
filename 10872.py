@@ -1,3 +1,4 @@
+#팩토리얼
 N = int( input() )
 def factorial(N):
     if N == 0:

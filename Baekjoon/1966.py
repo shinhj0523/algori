@@ -7,7 +7,7 @@ for _ in range(test_case):
     idx = list(range(len(imp)))
 
     idx[m] = 'target'
-    print(idx[m])
+
     #순서
     order = 0
 
